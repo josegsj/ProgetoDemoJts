@@ -15,11 +15,11 @@ import br.ilegra.modelo.Pessoa;
 import br.ilegra.negocio.PessoaRN;
 
 @WebServlet("/AgendaServlet")
-public class AgendaServlet extends HttpServlet {
+public class AgendaServlet2 extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	public AgendaServlet() {
+	public AgendaServlet2() {
 		super();
 	}
 
@@ -38,7 +38,10 @@ public class AgendaServlet extends HttpServlet {
 		System.out.println("entrou");
 		int i=0;
 		String nome = request.getParameter("nome");
-		
+		String celular = request.getParameter("celular");
+		String cep = request.getParameter("cep");
+		String telefone = request.getParameter("telefone");
+		String endereco = request.getParameter("endereco");
 		String email = request.getParameter("email");
 		String descricao = request.getParameter("descricao");
 		String action = request.getParameter("action");
